@@ -9,7 +9,7 @@ export default function Home({data}) {
       <h1>{ title }</h1>
       <p>{description}</p>
       <p><Link to="/blog">Read my blog</Link></p>
-      <p><StaticImage src="../images/2299546387_d521531617_o.jpg" alt="Fancy patter image" className="max-w-md mx-auto"/></p>
+      <p><div className="max-w-md mx-auto"><StaticImage src="../images/2299546387_d521531617_o.jpg" alt="Fancy patter image"/></div></p>
     </div>
 }
 
