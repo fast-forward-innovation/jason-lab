@@ -5,7 +5,7 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark
 
   return (
-    <div>
+    <div className="container mx-auto px-4">
       <h1>{post.frontmatter.title}</h1>
       <small>{post.frontmatter.date}</small>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />

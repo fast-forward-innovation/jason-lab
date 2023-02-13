@@ -5,7 +5,7 @@ export default function Blog({ data }) {
     const { posts } = data.blog
     
     return (
-        <div>
+        <div className="container mx-auto px-4">
             <h1>Blog Roll</h1>
 
             {posts.map(post => (

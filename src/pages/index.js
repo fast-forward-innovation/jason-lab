@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby"
 export default function Home({data}) {
   const { title, description } = data.site.siteMetadata
 
-  return <div>
+  return <div className="container mx-auto px-4">
     <h1>{ title }</h1>
     <p>{description}</p>
     <p><Link to="/blog">Read my blog</Link></p>

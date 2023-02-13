@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 18px;
+    @apply font-sans font-light
+}
+
+a {
+    @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600 font-medium
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    @apply text-3xl font-serif
+}
+
+h2 {
+    @apply text-2xl
+}
