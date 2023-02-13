@@ -29,5 +29,9 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl
+    @apply text-2xl font-serif
+}
+
+h3 {
+    @apply font-serif
 }
