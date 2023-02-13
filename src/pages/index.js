@@ -5,8 +5,8 @@ export default function Home({data}) {
   const { title, description } = data.site.siteMetadata
 
   return <div className="container mx-auto px-4">
-    <h1 className="text-3xl font-bold underline font-serif">{ title }</h1>
-    <p className="font-thin">{description}</p>
+    <h1>{ title }</h1>
+    <p>{description}</p>
     <p><Link to="/blog">Read my blog</Link></p>
     <img alt="Cute dog" src={data.image.publicURL} />
     </div>
