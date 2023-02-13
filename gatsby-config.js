@@ -28,5 +28,6 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-postcss'
   ],
 }
