@@ -35,3 +35,7 @@ h2 {
 h3 {
     @apply font-serif
 }
+
+.container {
+    @apply mx-4 mx-auto
+}

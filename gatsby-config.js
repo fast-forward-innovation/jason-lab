@@ -10,7 +10,17 @@
 module.exports = {
   siteMetadata: {
     title: 'Jason Yarrington\'s blog',
-    description: 'Coding experiments and new tools.'
+    description: 'Coding experiments and new tools.',
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'blog',
+        link: '/blog'
+      }
+    ]
   },
   plugins: [
     {

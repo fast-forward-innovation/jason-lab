@@ -1,11 +1,13 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
+import Layout from "../components/layout"
 
 export default function Blog({ data }) {
     const { posts } = data.blog
     
     return (
-        <div className="container mx-auto px-4">
+        <Layout>
+        <div className="">
             <h1>Blog Roll</h1>
 
             {posts.map(post => (
@@ -18,6 +20,7 @@ export default function Blog({ data }) {
                 </article>
             ))}
         </div>
+        </Layout>
     )
 }
 
