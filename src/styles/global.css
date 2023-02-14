@@ -39,3 +39,15 @@ h3 {
 .container {
     @apply mx-4 mx-auto
 }
+
+label {
+    @apply mr-2
+}
+input {
+    border: 1px solid lightgrey;
+}
+button {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    @apply px-4 py-2;
+}
