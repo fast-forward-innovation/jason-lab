@@ -1,0 +1,44 @@
+- name: History of preeclampsia	
+  label: >
+    Were you told you had high blood pressure in a previous pregnancy?<br/>  
+    Did your doctor tell you you had preeclampsia?
+  component: checkbox
+  initialValue: true
+- name: Multifetal gestation	
+  label: >
+    Is this pregnancy twins or triplets?
+- name: Chronic hypertension	
+  label: >
+    Do you have high blood pressure?<br/>  
+    Has a doctor every told you you have high blood pressure?<br/>
+    Have you ever needed medications for high blood pressure?
+- name: Type 1 or 2 diabetes	
+  label: Do you have diabetes?  Do you need to take medications or insulin to control your blood sugar?
+- name: Renal Disease	
+  label: Do you have kidney disease?  
+- name: Autoimmune disease	
+  label: Do you have any autoimmune disease such as lupus, or antiphospholipid antibody syndrome?
+- name: Nulliparity	
+  label: Is this your first pregnancy?
+- name: BMI >30+
+  label: please calc your bmi
+  component: bmi
+  children:
+    - name: Height
+      label: Height
+    - name: weight
+      label: Weight
+- name: Preeclampsia in mother or sister	
+  label: Did any of your close relatives - in particular your mother or a sister - have preeclampsia or problems with blood pressure in their pregnancies?
+- name: African American/Black race	
+  label: Do you identify as African American or Black race?
+- name: Medicaid insurance	
+  label: Is your medical insurance through Medicaid or your state public insurance?
+- name: Age 35 or older	
+  label: Will you be 35 or older when you expect this baby?
+- name: History of low birthweight or small for gestational age baby	
+  label: If you had a baby before, was the baby particularly small? Did you need extra ultrasounds or need to deliver early because the doctors were worried the baby wasn't growing well?
+- name: Previous adverse pregnancy outcome	
+  label: If you had a pregnancy before, were there any major complications, in particular loss of the baby after 20 weeks or placental abruption (heavy bleeding followed by early or quick delivery)?
+- name: More than 10 years since last delivery	
+  label: Has it been 10 years or more since your last pregnancy?

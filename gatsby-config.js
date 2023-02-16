@@ -41,6 +41,14 @@ module.exports = {
         path: `${__dirname}/src/blog/`,
       },
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/src/data/`,
+      },
+    },
     'gatsby-transformer-remark',
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,

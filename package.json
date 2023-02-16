@@ -13,6 +13,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
     "formik": "^2.2.9",
     "gatsby": "^5.6.0",
     "gatsby-plugin-image": "^3.6.0",
@@ -20,6 +25,8 @@
     "gatsby-source-filesystem": "^5.6.0",
     "gatsby-transformer-remark": "^6.6.0",
     "gatsby-transformer-sharp": "^5.6.0",
+    "gatsby-transformer-yaml": "^5.6.0",
+    "html-react-parser": "^3.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "yup": "^1.0.0"
