@@ -61,14 +61,22 @@ export const Calc = () => {
     setCompleted({});
   };
 
-  const steps = Object.entries(data)
-
-  let initialValues = {}
-
   data.forEach((field) => {
     field.id = convertToSlug(field.name)
     initialValues[field.id] = field.initialValue
   })
+  
+  const groups = ((data) => {
+    let groups = [];
+    Object.entries(data).forEach((value, index) => {
+      const groupId = value.group
+      groups[groupId] = groups[groupId] || []
+      groups[groupId].push(value)
+    })
+    return groups
+  })()
+
+  let initialValues = {}
 
   function convertToSlug(Text) {
     return Text.toLowerCase()
@@ -103,8 +111,7 @@ export const Calc = () => {
           <div className="flex">
             <div className="flex-1">
 
-
-            <Stepper nonLinear activeStep={activeStep} orientation="vertical">
+            <Stepper nonlinear activeStep={activeStep} orientation="vertical">
             { steps.map(([key, field]) => (
               <Step key={key} completed={completed[key]}>
                 <StepLabel>{parse(field.name)}</StepLabel>
