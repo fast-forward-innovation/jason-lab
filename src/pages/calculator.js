@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Calc } from "../components/calc"
+import { Calc } from "../components/calc/calc"
 
 export default function Calculator() {
     return (
