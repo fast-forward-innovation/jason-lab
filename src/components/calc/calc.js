@@ -104,11 +104,8 @@ export const Calc = () => {
             <div className="flex-1">
 
 
-            <Stepper nonLinear activeStep={activeStep} orientation="vertical">
             { steps.map(([key, field]) => (
-              <Step key={key} completed={completed[key]}>
-                <StepLabel>{parse(field.name)}</StepLabel>
-                <StepContent>
+<>
                   <div key={ key } className="form-item mb-2">
                     <label htmlFor={ field.id }>{ parse(field.label) }</label>
                     <Field type="checkbox" name={ field.id } />
@@ -116,38 +113,13 @@ export const Calc = () => {
                   </div>
                   <Box sx={{ mb: 2 }}>
                   <div>
-                    <Button
-                      variant="contained"
-                      onClick={handleNext}
-                      sx={{ mt: 1, mr: 1 }}
-                    >
-                      {key === data.length - 1 ? 'Finish' : 'Continue'}
-                    </Button>
-                    <Button
-                      disabled={key === 0}
-                      onClick={handleBack}
-                      sx={{ mt: 1, mr: 1 }}
-                    >
-                      Back
-                    </Button>
-                    {activeStep !== steps.length &&
-                      (completed[activeStep] ? (
-                        <Typography variant="caption" sx={{ display: 'inline-block' }}>
-                          Step {activeStep + 1} already completed
-                        </Typography>
-                      ) : (
-                        <Button onClick={handleComplete}>
-                          {completedSteps() === totalSteps() - 1
-                            ? 'Finish'
-                            : 'Complete Step'}
-                        </Button>
-                      ))}
+  
+
+                    
                   </div>
                 </Box>
-                </StepContent>
-              </Step>
+                </>
             ))}
-          </Stepper>
 
             <Bmi></Bmi>
             <div className="form-item">
